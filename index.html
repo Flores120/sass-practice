@@ -1,108 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <title></title>
-</head>
-<body>
-  <div id="wrapper">
-    <div id="header">
-      <img id="notify" src="img/notification.png" alt="notify"  width="35"/>
-      <img id="arrow" src="img/arrow.png" alt="arrow"  width="35"/>
-      <img id="profile" src="img/profile.png" alt="profile"  width="35"/>
-      <h2>Library</h2>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="nav-icon" id="hamburger" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt="hamburger" />
+      <img class="nav-icon" id="logo" src="https://teamtreehouse.com/assets/favicon.png" alt="logo" />
+      <img class="nav-icon" id="bell" src="img/alarm.png" alt="" />
     </div>
-    <div class="allBox">
-      <div id="box1">
-        <div id="box1-header">
-          <img class="book" src="img/book.png" alt="Book" />
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <h5>118 min</h5>
+    <div class="container">
+
+      <h3 id="library">Library</h3>
+      <div class="header">
+        <div class="header-bar">
+          <img class="book" src="img/book.png" alt="" />
+          <span class="circle" id="highlighted"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="hour">4 hours</span>
         </div>
-        <div id="box-content">
-          <p>Course</p>
-          <h3>Java Annotations</h3>
-          <p>
-            Annotaions have rapidly becomeBro ipsum dolor sit amet rock roll titanium Whistler, chain ring cruiser 360 sharkbite steed poaching bomb. Jib backside chillax cruiser derailleur bowl pinner steed gapers bail big ring gnar air.
-          </p>
-        </div>
-        <div id="play"><img src="img/play.png" alt="play" width="40" /></div>
-        <div id="star"><img src="img/star.png" alt="star" width="40" /></div>
-        <div class="buttonH">
-          <button><span class="java">Java</span></button><button class="button">Intermediate</button>
+        <div class="header-body">
+          <h1>Sass Basics</h1>
+          <h3>262-minute CSS Course</h3>
+          <button type="button" name="button">
+            Resume Course <img src="" alt="" />
+          </button>
         </div>
       </div>
 
-      <div id="box2">
-        <div id="box2-header">
-          <img class="book" src="img/book.png" alt="Book" width="35"/>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <h5>2 hours</h5>
+      <div class="main">
+        <div class="section" id="level">
+          <button class="language" type="button" name="button">CSS</button>
+          <button type="button" name="button">Intermediate</button>
         </div>
-        <div id="box-content">
-          <p>Course</p>
-          <h3>Customizing Django Templates</h3>
-          <p>
-            Annotaions have rapidly becomeBro ipsum dolor sit amet rock roll titanium Whistler, chain ring cruiser 360 sharkbite steed poaching bomb. Jib backside chillax cruiser.
-          </p>
+        <div class="info">
+          <div class="section" id="about" >
+            <h2>About this Course</h2>
+            <p>Sass is a powerful language that extends CSS with features like nested rules, variables, mixins, math operations, and more, in a CSS-compatible syntax. Because of this, many of today's popular websites, applications, and frameworks are built using Sass. In this course, we'll be coding along with Hampton Catlin, our guest teacher and creator of Sass.</p>
+            <br>
+            <p id="preReq">For best results, we recommend first taking these prerequisite courses...</p>
+            <div class="preReq">
+              <img src="img/book.png" alt="book" />
+              <p>Course</p>
+              <span>CSS Basics</span>
+            </div>
+          </div>
+          <div class="section stage">
+            <img id="arrow" src="https://cdn0.iconfinder.com/data/icons/interaction-outlined/60/circle-arrow-right-sign-character-shape-512.png" alt="" width="70" />
+            <h3>Getting Started with CSS</h3>
+            <p>
+              Learn what Sass is, how the Sass compiler works, and the number of ways we can install Sass on our computer. Once we have Sass installed, we'll start by learning all about nesting, one of Sass' most useful features.
+            </p>
+            <p class="steps">
+              <img src="http://www.clker.com/cliparts/P/b/R/e/O/r/arrow-blue-down-hi.png" height="10"alt=""/>
+              8 steps
+            </p>
+          </div>
+          <div class="section stage">
+            <img id="arrow" src="https://cdn0.iconfinder.com/data/icons/interaction-outlined/60/circle-arrow-right-sign-character-shape-512.png" alt="" width="70" />
+            <h3>Variables, Mixins, and Extending Selectors</h3>
+            <p>
+              Learn how to keep your code "DRY" by defining variables and creating snippets of shareable code with mixins. We'll then use the extend functionality of Sass to extend styles onto other selectors.
+            </p>
+            <p class="steps">
+              <img src="http://www.clker.com/cliparts/P/b/R/e/O/r/arrow-blue-down-hi.png" height="10"alt=""/>
+              7 steps
+            </p>
+          </div>
         </div>
-        <div id="play"><img src="img/play.png" alt="play" width="40" /></div>
-        <div id="star"><img src="img/star.png" alt="star" width="40" /></div>
-        <div class="buttonH">
-          <button><span class="python">Python</span></button><button class="button">Intermediate</button>
-        </div>
-      </div>
-      <div id="box3">
-        <div id="box3-header">
-          <img class="book" src="img/book.png" alt="Book" />
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <h5>3 hours</h5>
-        </div>
-        <div id="box-content">
-          <p>Course</p>
-          <h3>WooCommerce Theme Development</h3>
-          <p>
-            Annotaions have rapidly becomeBro ipsum dolor sit amet rock roll titanium Whistler, chain ring cruiser 360 sharkbite steed poaching bomb. Jib backside chillax.
-          </p>
-        </div>
-        <div id="play"><img src="img/play.png" alt="play" width="40" /></div>
-        <div id="star"><img src="img/star.png" alt="star" width="40" /></div>
-        <div class="buttonH">
-          <button><span class="wordpress">WordPress</span></button><button class="button">Intermediate</button>
+        <div class="sidebar">
+          <div class="section" id="teacher">
+            <img src="https://secure.gravatar.com/avatar/a77873df3a9766b208e009248a2a9a56?s=400&d…ssets%2Fcontent%2Fdefault_avatar-d5ee029fdb4c0604d314eb946dbf8e6a.png&r=pg" alt="" />
+            <h2>Teacher</h2>
+            <span>Hampton Catlin</span>
+            <p>
+              Hampton Catlin is the creator of Sass, Haml, m.wikipedia.org, and Moovweb. He's also the founder of the libsass project and the author of "The Pragmatic Guide to Sass."
+            </p>
+          </div>
+          <div class="section" id="download-videos">
+            <h2>Download Videos</h2>
+            <p>
+              Download all the videos from this collection using iTunes. Continue watching videos even when an internet connection is unavailable.
+            </p>
+            <button type="button" name="button">iTunes Feed</button>
+          </div>
         </div>
       </div>
 
-      <div id="box4">
-        <div id="box4-header">
-          <img class="book" src="img/book.png" alt="Book" />
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <div id="circle"></div>
-          <h5>3 hours</h5>
-        </div>
-        <div id="box-content">
-          <p>Course</p>
-          <h3>Bild JavaFX Application</h3>
-          <p>
-            Annotaions have rapidly becomeBro ipsum dolor sit amet rock roll titanium Whistler, chain ring cruiser 360
-          </p>
-        </div>
-        <div id="play"><img src="img/play.png" alt="play" width="40" /></div>
-        <div id="star"><img src="img/star.png" alt="star" width="40" /></div>
-        <div class="buttonH">
-          <button><span class="java">Java</span></button><button class="button">Intermediate</button>
-        </div>
+      <div class="footer">
       </div>
+
     </div>
-  </div>
-</body>
+
+  </body>
 </html>
